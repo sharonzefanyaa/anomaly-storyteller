@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ads Data Input</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f3ef;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 56px; /* dibesarin di sini */
+      color: #5c4033; /* coffee brown */
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #7a6f66;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #c8a97e; /* butter/earth tone */
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b8966d;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #5c4033;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    .home-button:hover {
+      background-color: #3e2a22;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="home-button">Home</a>
+
+  <div class="container">
+    <h1>Ads Data Input</h1>
+    <p>Click start to initiate data input process</p>
+    <button onclick="goNext()">Start</button>
+  </div>
+
+  <script>
+    function goNext() {
+      window.location.href = "options.html";
+    }
+  </script>
+  
+</body>
+</html>

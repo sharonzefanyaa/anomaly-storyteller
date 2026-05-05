@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manual Data Input</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f3ef;
+    }
+
+    .container {
+      width: 400px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Brush Script MT", cursive;
+      font-size: 42px;
+      color: #5c4033;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #7a6f66;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-size: 13px;
+      color: #5c4033;
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 12px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #c8a97e;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b8966d;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 16px;
+      background-color: #5c4033;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    .home-button:hover {
+      background-color: #3e2a22;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html" class="home-button">Home</a>
+
+  <div class="container">
+    <h1>Manual Input</h1>
+    <p>Enter campaign data for analysis</p>
+
+    <!-- Campaign Info -->
+    <label><strong>Platform</strong></label>
+    <select id="platform">
+      <option>TikTok</option>
+      <option>Instagram</option>
+      <option>Facebook</option>
+    </select>
+
+    <label><strong>Campaign Name</strong></label>
+    <input type="text" id="campaign_name" placeholder="e.g. App Install">
+
+    <label><strong>Campaign Status</strong></label>
+    <select id="campaign_status">
+      <option>ON</option>
+      <option>PAUSED</option>
+    </select>
+
+    <!-- Creative & Audience -->
+    <label><strong>Creative Type</strong></label>
+    <select id="creative_type">
+      <option>video</option>
+      <option>image</option>
+      <option>carousel</option>
+      <option>reels</option>
+      <option>story</option>
+    </select>
+
+    <label><strong>Audience Type</strong></label>
+    <select id="audience_type">
+      <option>broad</option>
+      <option>retargeting</option>
+      <option>look alike</option>
+      <option>custom audience</option>
+    </select>
+
+    <!-- Metrics -->
+    <label><strong>Impressions</strong></label>
+    <input type="text" id="impressions" placeholder="e.g. 10000">
+
+    <label><strong>Clicks</strong></label>
+    <input type="text" id="clicks" placeholder="e.g. 500">
+
+    <label><strong>Registrations</strong></label>
+    <input type="text" id="registrations" placeholder="e.g. 120">
+
+    <!-- Cost -->
+    <label><strong>Cost</strong></label>
+    <input type="text" id="cost" placeholder="e.g. 2000000">
+
+    <!-- Behavior -->
+    <label><strong>Frequency</strong></label>
+    <input type="text" id="frequency" placeholder="e.g. 2.5">
+
+    <button onclick="submitData()">Submit Data</button>
+  </div>
+
+  <script>
+    function submitData() {
+    const data = {
+      platform: document.getElementById("platform").value,
+      campaign_name: document.getElementById("campaign_name").value,
+      campaign_status: document.getElementById("campaign_status").value,
+      creative_type: document.getElementById("creative_type").value,
+      audience_type: document.getElementById("audience_type").value,
+
+      impressions: document.getElementById("impressions").value,
+      clicks: document.getElementById("clicks").value,
+      registrations: document.getElementById("registrations").value,
+      cost: document.getElementById("cost").value,
+      frequency: document.getElementById("frequency").value
+    };
+
+    fetch("http://127.0.0.1:5000/submit", {
+        method: "POST",
+        headers: {
+        "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(result => {
+        console.log(result);
+        alert("Data submitted!");
+    });
+    }
+  </script>
+
+</body>
+</html>
