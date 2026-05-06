@@ -12,7 +12,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-N8N_WEBHOOK_URL = "https://sharzefa.app.n8n.cloud/webhook/ads-data-trigger"
+N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL")
 
 
 # HELPERS
