@@ -98,19 +98,11 @@ button {
   cursor: pointer;
 }
 
-/* HOME BUTTON */
+/* HOME BUTTON (SAFE OVERRIDE) */
 .home-button {
   position: fixed;
-  top: 16px;
-  left: 16px;
-
-  padding: 8px 12px;
-  background: #5c4033;
-  color: white;
-
-  font-size: 13px;
-  border-radius: 8px;
-  text-decoration: none;
+  top: 20px;
+  left: 20px;
 }
 
 /* SECTION DIVIDER */
