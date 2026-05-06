@@ -1,15 +1,11 @@
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BASE
-========================= */
+/* BASE */
 body {
   font-family: Arial, sans-serif;
   background: #f7f3ef;
@@ -17,9 +13,7 @@ body {
   min-height: 100vh;
 }
 
-/* =========================
-   TYPOGRAPHY
-========================= */
+/* TYPOGRAPHY */
 h1 {
   font-family: "Brush Script MT", cursive;
   color: #5c4033;
@@ -31,9 +25,7 @@ p {
   line-height: 1.5;
 }
 
-/* =========================
-   BUTTON BASE
-========================= */
+/* BUTTON BASE */
 button {
   padding: 12px 18px;
   border: none;
@@ -50,9 +42,7 @@ button:hover {
   background: #b8966d;
 }
 
-/* =========================
-   HOME BUTTON
-========================= */
+/* HOME BUTTON */
 .home-button {
   position: fixed;
   top: 20px;
