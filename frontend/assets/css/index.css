@@ -12,15 +12,10 @@ body {
   flex-direction: column;
   align-items: center;
 
-  gap: 12px;
-  max-width: 500px;
-}
+  gap: 14px;
 
-/* TEXT SIZE */
-h1 {
-  font-size: 56px;
-}
-
-p {
-  font-size: 16px;
+  /* 🔥 mobile friendly */
+  width: 100%;
+  max-width: 420px;
+  padding: 0 16px;
 }
