@@ -71,3 +71,30 @@ button:hover {
   text-decoration: none;
   font-size: 14px;
 }
+
+/* MOBILE OVERRIDE */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 30px; /* naik dari 18 */
+  }
+
+  h1 {
+    font-size: 70px; /* dari 42 → hampir 2x feel */
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 28px;
+    min-height: 68px;
+    padding: 25px 30px;
+  }
+
+  .container {
+    padding: 38px 28px;
+  }
+  
+}
