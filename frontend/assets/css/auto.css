@@ -12,18 +12,15 @@
 /* HEADER */
 .page-header {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .page-header h1 {
-  font-size: 40px;
   margin-bottom: 6px;
-  color: #5c4033;
 }
 
 .page-header p {
-  font-size: 14px;
-  color: #7a6f66;
+  margin-top: 4px;
 }
 
 /* STATUS */
@@ -41,7 +38,7 @@
   color: #a35c5c;
 }
 
-/* loading dots */
+/* LOADING DOT */
 .dot::after {
   content: '';
   animation: dots 1.2s steps(4, end) infinite;
@@ -64,108 +61,82 @@
   box-shadow: 0 4px 14px rgba(92, 64, 51, 0.08);
 }
 
-/* PREVIEW WRAPPER */
-#preview {
-  width: 100%;
-}
-
-/* PREVIEW TABLE CARD STYLE */
+/* PREVIEW */
 .preview {
   background: #fff;
   border-radius: 12px;
-
   padding: 14px;
+
   box-shadow: 0 4px 14px rgba(92, 64, 51, 0.08);
 }
 
 /* TITLE */
 .preview-title {
-  text-align: center;
-  font-size: 18px;
+  text-align: left;
+  font-size: 16px;
   font-weight: 600;
   color: #5c4033;
 
-  margin-top: 6px;
   margin-bottom: 10px;
 }
 
-
-/* TABLE BASE */
+/* TABLE */
 .preview table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
 
-  font-size: 13px;
+  font-size: clamp(13px, 3.5vw, 14px);
 
   border: 1px solid #e6d7cc;
   border-radius: 10px;
   overflow: hidden;
-
-  background: #fff;
 }
 
-/* ROW CELL */
+/* CELL */
 .preview td {
   padding: 11px 12px;
   border-bottom: 1px solid #efe4db;
-
-  background: #fff;
 }
 
-/* FIELD COLUMN */
+/* FIELD */
 .preview td:first-child {
   font-weight: 600;
   color: #5a3d2e;
-  text-align: center;
-
   width: 40%;
   border-right: 1px solid #e8ddd2;
 
-  /* softer */
   background: #f3e6de;
 }
 
-/* VALUE COLUMN */
+/* VALUE */
 .preview td:last-child {
-  color: #3e2a22;
-  text-align: left;
-
   background: #fffaf7;
 }
 
-/* LAST ROW CLEAN */
+/* LAST ROW */
 .preview tr:last-child td {
   border-bottom: none;
 }
 
-/* HOVER (SOFT LIFT, NOT DARK DROP) */
+/* HOVER */
 .preview tr:hover td:first-child {
-  background: #ead9cf; /* slightly deeper, not dark */
+  background: #ead9cf;
 }
 
 .preview tr:hover td:last-child {
-  background: #f7eee9; /* warm lift */
+  background: #f7eee9;
 }
 
-/* HOME BUTTON (SAFE OVERRIDE) */
-.home-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-}
-
-/* SEND BUTTON */
+/* BUTTON */
 .send-btn {
   margin-top: 12px;
   width: 100%;
   padding: 12px;
-  border: none;
   border-radius: 10px;
 
   background: #5c4033;
   color: white;
-  cursor: pointer;
 }
 
 .send-btn:hover {
