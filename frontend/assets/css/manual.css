@@ -18,9 +18,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* ❌ HAPUS override font size */
-/* h1 & p biar ikut global */
-
 /* FORM CARD */
 .form-card {
   background: white;
