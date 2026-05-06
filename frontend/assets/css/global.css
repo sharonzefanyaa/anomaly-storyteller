@@ -11,6 +11,9 @@ body {
   background: #f7f3ef;
   color: #3e2a22;
   min-height: 100vh;
+
+  /* responsive base font */
+  font-size: clamp(14px, 3.5vw, 16px);
 }
 
 /* TYPOGRAPHY */
@@ -18,11 +21,17 @@ h1 {
   font-family: "Brush Script MT", cursive;
   color: #5c4033;
   line-height: 1.2;
+
+  /* responsive title */
+  font-size: clamp(32px, 8vw, 56px);
 }
 
 p {
   color: #7a6f66;
   line-height: 1.5;
+
+  /* responsive paragraph */
+  font-size: clamp(14px, 4vw, 16px);
 }
 
 /* BUTTON BASE */
@@ -36,6 +45,10 @@ button {
   cursor: pointer;
 
   transition: 0.2s ease;
+
+  /* responsive layout */
+  width: 100%;
+  max-width: 220px;
 }
 
 button:hover {
@@ -45,14 +58,14 @@ button:hover {
 /* HOME BUTTON */
 .home-button {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 16px;
+  left: 16px;
 
-  padding: 10px 14px;
+  padding: 8px 12px;
   background: #5c4033;
   color: white;
 
   border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
