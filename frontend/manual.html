@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manual Data Input</title>
+
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/manual.css">
+</head>
+
+<body>
+
+  <a href="index.html" class="home-button">Home</a>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Manual Input</h1>
+      <p>Enter campaign data for analysis</p>
+    </div>
+
+    <form class="form-card">
+
+      <div class="section">Campaign Info</div>
+
+      <label>Platform</label>
+      <select id="platform">
+        <option>TikTok</option>
+        <option>Instagram</option>
+        <option>Facebook</option>
+      </select>
+
+      <label>Campaign Name</label>
+      <input type="text" id="campaign_name" placeholder="e.g. Brand Awareness">
+
+      <label>Campaign Status</label>
+      <select id="campaign_status">
+        <option>ON</option>
+        <option>PAUSED</option>
+      </select>
+
+      <div class="divider"></div>
+      <div class="section">Creative & Audience</div>
+
+      <label>Creative Type</label>
+      <select id="creative_type">
+        <option>video</option>
+        <option>image</option>
+        <option>carousel</option>
+        <option>reels</option>
+        <option>story</option>
+      </select>
+
+      <label>Audience Type</label>
+      <select id="audience_type">
+        <option>broad</option>
+        <option>retargeting</option>
+        <option>look alike</option>
+        <option>custom audience</option>
+      </select>
+
+      <div class="divider"></div>
+      <div class="section">Performance Metrics</div>
+
+      <label>Impressions</label>
+      <input type="text" id="impressions" placeholder="e.g. 10000">
+
+      <label>Clicks</label>
+      <input type="text" id="clicks" placeholder="e.g. 500">
+
+      <label>Registrations</label>
+      <input type="text" id="registrations" placeholder="e.g. 120">
+
+      <label>Frequency</label>
+      <input type="text" id="frequency" placeholder="e.g. 2.5">
+
+    
+      <div class="divider"></div>
+      <div class="section">Cost</div>
+
+      <label>Total Cost</label>
+      <input type="text" id="cost" placeholder="e.g. 2000000">
+
+      <button type="button" onclick="submitData()">Submit Data</button>
+
+    </form>
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
