@@ -12,8 +12,11 @@ body {
   flex-direction: column;
   align-items: center;
 
-  gap: 12px;
+  gap: 16px;
+
+  width: 100%;
   max-width: 420px;
+  padding: 0 16px;
 }
 
 /* BUTTON GROUP */
@@ -21,18 +24,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
+/* BUTTON SIZE */
 .btn-group button {
-  width: 220px;
-}
-
-/* TEXT SIZE */
-h1 {
-  font-size: 56px;
-}
-
-p {
-  font-size: 16px;
+  width: 100%;
+  max-width: 240px;
 }
