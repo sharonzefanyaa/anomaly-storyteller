@@ -1,12 +1,8 @@
-// =========================
 // GLOBAL STATE
-// =========================
 let currentData = null;
 
 
-// =========================
 // NAVIGATION
-// =========================
 function goNext() {
   window.location.href = "options.html";
 }
@@ -20,9 +16,7 @@ function manualMode() {
 }
 
 
-// =========================
 // UTIL: SEND TO N8N
-// =========================
 function sendToN8N(payload = null) {
 
   const data = payload || currentData;
@@ -32,7 +26,7 @@ function sendToN8N(payload = null) {
     return;
   }
 
-  fetch("http://127.0.0.1:5000/send", {
+  fetch("https://anomaly-storyteller.onrender.com/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -51,9 +45,7 @@ function sendToN8N(payload = null) {
 }
 
 
-// =========================
 // AUTO PAGE INIT
-// =========================
 function initAutoPage() {
 
   const status = document.getElementById("status");
@@ -61,7 +53,7 @@ function initAutoPage() {
 
   if (!status || !preview) return;
 
-  fetch("http://127.0.0.1:5000/auto", {
+  fetch("https://anomaly-storyteller.onrender.com/auto", {
     method: "POST"
   })
     .then(res => res.json())
@@ -88,9 +80,7 @@ function initAutoPage() {
 }
 
 
-// =========================
 // MANUAL SUBMIT (generate + send)
-// =========================
 function submitData() {
 
   const data = {
@@ -111,18 +101,14 @@ function submitData() {
 }
 
 
-// =========================
 // HELPERS
-// =========================
 function getVal(id) {
   const el = document.getElementById(id);
   return el ? el.value : "";
 }
 
 
-// =========================
 // RENDER PREVIEW UI
-// =========================
 function renderPreview(data) {
 
   return `
@@ -154,12 +140,10 @@ function renderPreview(data) {
 }
 
 
-// =========================
 // AUTO INIT (SAFE)
-// =========================
 window.addEventListener("DOMContentLoaded", () => {
 
-  // hanya jalan kalau ada auto page
+  // only works when the auto page is exist
   if (document.getElementById("status")) {
     initAutoPage();
   }
