@@ -1,0 +1,68 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f3ef;
+  color: #3e2a22;
+  min-height: 100vh;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  font-family: "Brush Script MT", cursive;
+  color: #5c4033;
+  line-height: 1.2;
+}
+
+p {
+  color: #7a6f66;
+  line-height: 1.5;
+}
+
+/* =========================
+   BUTTON BASE
+========================= */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+
+  background: #c8a97e;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #b8966d;
+}
+
+/* =========================
+   HOME BUTTON
+========================= */
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  padding: 10px 14px;
+  background: #5c4033;
+  color: white;
+
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}

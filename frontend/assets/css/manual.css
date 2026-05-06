@@ -1,0 +1,144 @@
+/* =========================
+   PAGE BASE
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f3ef;
+  color: #3e2a22;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   CONTAINER (NARROW MOBILE FEEL)
+========================= */
+.container {
+  width: 100%;
+  max-width: 420px;   /* bikin kayak mobile */
+  padding: 40px 20px 20px;
+}
+
+/* =========================
+   HEADER (CENTERED)
+========================= */
+.header {
+  text-align: center;
+  margin-top: 10px; 
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 38px;
+  margin: 0;
+  color: #5c4033;
+}
+
+p {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #7a6f66;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+.form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   SECTION LABEL
+========================= */
+.section {
+  margin: 18px 0 10px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #5c4033;
+  text-transform: uppercase;
+}
+
+/* =========================
+   LABEL
+========================= */
+label {
+  display: block;
+  font-size: 13px;
+  margin: 10px 0 6px;
+  color: #5c4033;
+}
+
+/* =========================
+   INPUT
+========================= */
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+
+  border-radius: 10px;
+  border: 1px solid #e6d7c9;
+
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #c8a97e;
+  box-shadow: 0 0 0 3px rgba(200,169,126,0.2);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #c8a97e;
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* =========================
+   HOME BUTTON
+========================= */
+.home-button {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+
+  padding: 8px 12px;
+  background: #5c4033;
+  color: white;
+
+  font-size: 13px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* =========================
+   SECTION DIVIDER
+========================= */
+.divider {
+  height: 1px;
+  background: #eee3d7;
+  margin: 18px 0;
+  opacity: 0;
+}
+
+.section {
+  margin-top: 18px;
+}
