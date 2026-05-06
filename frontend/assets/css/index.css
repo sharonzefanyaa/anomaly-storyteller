@@ -1,15 +1,11 @@
-/* =========================
-   CENTER LAYOUT
-========================= */
+/* CENTER LAYOUT */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 .container {
   text-align: center;
   display: flex;
@@ -20,9 +16,7 @@ body {
   max-width: 500px;
 }
 
-/* =========================
-   TEXT SIZE
-========================= */
+/* TEXT SIZE */
 h1 {
   font-size: 56px;
 }
