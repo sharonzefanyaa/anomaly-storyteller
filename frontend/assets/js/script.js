@@ -83,7 +83,7 @@ function initAutoPage() {
 // MANUAL SUBMIT (generate + send)
 function submitData() {
 
-  const data = {
+  const rawData = {
     platform: getVal("platform"),
     campaign_name: getVal("campaign_name"),
     campaign_status: getVal("campaign_status"),
@@ -96,8 +96,29 @@ function submitData() {
     frequency: getVal("frequency")
   };
 
-  // langsung send
-  sendToN8N(data);
+  // STEP 1: generate context 
+  fetch("https://anomaly-storyteller.onrender.com/manual", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(rawData)
+  })
+    .then(res => res.json())
+    .then(res => {
+
+      const fullData = res.data;
+
+      console.log("GENERATED:", fullData);
+
+      // STEP 2: send to n8n
+      sendToN8N(fullData);
+
+    })
+    .catch(err => {
+      console.error("MANUAL ERROR:", err);
+      alert("Failed to generate data");
+    });
 }
 
 
