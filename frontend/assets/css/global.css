@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 
   /* responsive base font */
-  font-size: clamp(14px, 3.5vw, 16px);
+  font-size: clamp(16px, 4.8vw, 18px);
 }
 
 /* TYPOGRAPHY */
@@ -23,7 +23,7 @@ h1 {
   line-height: 1.2;
 
   /* responsive title */
-  font-size: clamp(32px, 8vw, 56px);
+  font-size: clamp(40px, 11vw, 64px);
 }
 
 p {
@@ -31,14 +31,14 @@ p {
   line-height: 1.5;
 
   /* responsive paragraph */
-  font-size: clamp(14px, 4vw, 16px);
+  font-size: clamp(16px, 4.5vw, 18px);
 }
 
 /* BUTTON BASE */
 button {
-  padding: 12px 18px;
+  padding: 14px 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
 
   background: #c8a97e;
   color: white;
@@ -48,7 +48,9 @@ button {
 
   /* responsive layout */
   width: 100%;
-  max-width: 220px;
+  max-width: 260px;
+  font-size: 16px;
+  min-height: 48px;
 }
 
 button:hover {
@@ -61,11 +63,11 @@ button:hover {
   top: 16px;
   left: 16px;
 
-  padding: 8px 12px;
+  padding: 10px 14px;
   background: #5c4033;
   color: white;
 
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
 }
