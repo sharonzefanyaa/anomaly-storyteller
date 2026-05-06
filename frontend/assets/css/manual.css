@@ -1,6 +1,4 @@
-/* =========================
-   PAGE BASE
-========================= */
+/* PAGE BASE */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,18 +9,14 @@ body {
   justify-content: center;
 }
 
-/* =========================
-   CONTAINER (NARROW MOBILE FEEL)
-========================= */
+/* CONTAINER (NARROW MOBILE FEEL) */
 .container {
   width: 100%;
   max-width: 420px;   /* bikin kayak mobile */
   padding: 40px 20px 20px;
 }
 
-/* =========================
-   HEADER (CENTERED)
-========================= */
+/* HEADER (CENTERED) */
 .header {
   text-align: center;
   margin-top: 10px; 
@@ -42,9 +36,7 @@ p {
   color: #7a6f66;
 }
 
-/* =========================
-   FORM CARD
-========================= */
+/* FORM CARD */
 .form-card {
   background: white;
   border-radius: 16px;
@@ -53,9 +45,7 @@ p {
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
-/* =========================
-   SECTION LABEL
-========================= */
+/* SECTION LABEL */
 .section {
   margin: 18px 0 10px;
   font-size: 11px;
@@ -75,9 +65,7 @@ label {
   color: #5c4033;
 }
 
-/* =========================
-   INPUT
-========================= */
+/* INPUT */
 input, select {
   width: 100%;
   padding: 10px 12px;
@@ -94,9 +82,7 @@ input:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(200,169,126,0.2);
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 button {
   width: 100%;
   margin-top: 16px;
@@ -112,9 +98,7 @@ button {
   cursor: pointer;
 }
 
-/* =========================
-   HOME BUTTON
-========================= */
+/* HOME BUTTON */
 .home-button {
   position: fixed;
   top: 16px;
@@ -129,9 +113,7 @@ button {
   text-decoration: none;
 }
 
-/* =========================
-   SECTION DIVIDER
-========================= */
+/* SECTION DIVIDER */
 .divider {
   height: 1px;
   background: #eee3d7;
