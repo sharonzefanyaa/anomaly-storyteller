@@ -1,7 +1,5 @@
 
-/* =========================
-   PAGE LAYOUT
-========================= */
+/* PAGE LAYOUT */
 .container {
   max-width: 520px;
   margin: 0 auto;
@@ -12,9 +10,7 @@
   gap: 16px;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 .page-header {
   text-align: center;
   margin-top: 30px;
@@ -31,9 +27,7 @@
   color: #7a6f66;
 }
 
-/* =========================
-   STATUS
-========================= */
+/* STATUS */
 .status {
   text-align: center;
   font-size: 14px;
@@ -62,9 +56,7 @@
   100% { content: ''; }
 }
 
-/* =========================
-   CARD
-========================= */
+/* CARD */
 .card {
   background: #fff;
   border-radius: 12px;
@@ -73,16 +65,12 @@
   box-shadow: 0 4px 14px rgba(92, 64, 51, 0.08);
 }
 
-/* =========================
-   PREVIEW WRAPPER
-========================= */
+/* PREVIEW WRAPPER */
 #preview {
   width: 100%;
 }
 
-/* =========================
-   PREVIEW TABLE CARD STYLE
-========================= */
+/* PREVIEW TABLE CARD STYLE */
 .preview {
   background: #fff;
   border-radius: 12px;
@@ -91,9 +79,7 @@
   box-shadow: 0 4px 14px rgba(92, 64, 51, 0.08);
 }
 
-/* =========================
-   TITLE
-========================= */
+/* TITLE */
 .preview-title {
   text-align: center;
   font-size: 18px;
@@ -105,9 +91,7 @@
 }
 
 
-/* =========================
-   TABLE BASE
-========================= */
+/* TABLE BASE */
 .preview table {
   width: 100%;
   border-collapse: separate;
@@ -122,9 +106,7 @@
   background: #fff;
 }
 
-/* =========================
-   ROW CELL
-========================= */
+/* ROW CELL */
 .preview td {
   padding: 11px 12px;
   border-bottom: 1px solid #efe4db;
@@ -132,9 +114,7 @@
   background: #fff;
 }
 
-/* =========================
-   FIELD COLUMN (SOFT DARK COFFEE)
-========================= */
+/* FIELD COLUMN */
 .preview td:first-child {
   font-weight: 600;
   color: #5a3d2e;
@@ -143,13 +123,11 @@
   width: 40%;
   border-right: 1px solid #e8ddd2;
 
-  /* softer, more premium */
+  /* softer */
   background: #f3e6de;
 }
 
-/* =========================
-   VALUE COLUMN (WARM LIGHT)
-========================= */
+/* VALUE COLUMN */
 .preview td:last-child {
   color: #3e2a22;
   text-align: left;
@@ -157,16 +135,12 @@
   background: #fffaf7;
 }
 
-/* =========================
-   LAST ROW CLEAN
-========================= */
+/* LAST ROW CLEAN */
 .preview tr:last-child td {
   border-bottom: none;
 }
 
-/* =========================
-   HOVER (SOFT LIFT, NOT DARK DROP)
-========================= */
+/* HOVER (SOFT LIFT, NOT DARK DROP) */
 .preview tr:hover td:first-child {
   background: #ead9cf; /* slightly deeper, not dark */
 }
@@ -175,9 +149,7 @@
   background: #f7eee9; /* warm lift */
 }
 
-/* =========================
-   HOME BUTTON (SAFE OVERRIDE)
-========================= */
+/* HOME BUTTON (SAFE OVERRIDE) */
 .home-button {
   position: fixed;
   top: 20px;
