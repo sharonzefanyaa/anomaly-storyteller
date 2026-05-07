@@ -33,12 +33,11 @@ main,
   display: flex;
   flex-direction: column;
 
-  /* jangan center vertical */
+  /* no vertical */
   justify-content: center;
   align-items: center;
 
   text-align: center;
-
   padding: 24px;
 }
 
