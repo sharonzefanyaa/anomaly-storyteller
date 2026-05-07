@@ -1,81 +1,125 @@
-/* PAGE BASE */
-body {
-  display: flex;
-  justify-content: center;
-}
-
-/* CONTAINER */
+/* PAGE */
 .container {
   width: 100%;
-  max-width: 420px;
-  padding: 36px 16px 20px;
+  max-width: 520px;
+
+  margin: 0 auto;
+  padding: 90px 18px 40px;
 }
 
 /* HEADER */
 .header {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 16px;
+
+  margin-bottom: 24px;
 }
 
 /* FORM CARD */
 .form-card {
-  background: white;
-  border-radius: 16px;
-  padding: 18px;
+  width: 100%;
 
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  background: white;
+  border-radius: 18px;
+
+  padding: 22px;
+
+  box-shadow: 0 4px 14px rgba(92, 64, 51, 0.08);
 }
 
-/* SECTION LABEL */
+/* SECTION */
 .section {
-  margin: 18px 0 10px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.6px;
-  color: #5c4033;
+  margin: 26px 0 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
   text-transform: uppercase;
+
+  color: #5c4033;
+
+  text-align: left;
 }
 
 /* LABEL */
 label {
   display: block;
-  font-size: 13px;
-  margin: 10px 0 6px;
+
+  margin-bottom: 8px;
+  margin-top: 18px;
+
+  font-size: 15px;
   color: #5c4033;
+
+  text-align: left;
 }
 
 /* INPUT */
-input, select {
+input,
+select {
   width: 100%;
-  padding: 10px 12px;
 
-  border-radius: 10px;
-  border: 1px solid #e6d7c9;
+  padding: 14px 14px;
 
-  font-size: 14px;
+  border-radius: 14px;
+  border: 1px solid #e8ddd2;
+
+  background: #fff;
+
+  font-size: 16px;
+  color: #3e2a22;
 }
 
-input:focus, select:focus {
+input::placeholder {
+  color: #9d9187;
+}
+
+input:focus,
+select:focus {
   outline: none;
+
   border-color: #c8a97e;
-  box-shadow: 0 0 0 3px rgba(200,169,126,0.2);
+
+  box-shadow: 0 0 0 3px rgba(200,169,126,0.18);
 }
 
 /* BUTTON */
 button {
   width: 100%;
-  margin-top: 18px;
-  padding: 12px;
-  border-radius: 12px;
 
-  font-size: 15px;
+  margin-top: 24px;
+  padding: 15px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+
+  background: #5c4033;
 }
 
-/* DIVIDER */
-.divider {
-  height: 1px;
-  background: #eee3d7;
-  margin: 18px 0;
-  opacity: 0;
+button:hover {
+  background: #3f2c22;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .container {
+    padding: 84px 16px 32px;
+  }
+
+  .form-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  input,
+  select {
+    font-size: 15px;
+    padding: 13px;
+  }
+
+  label {
+    font-size: 14px;
+  }
 }
