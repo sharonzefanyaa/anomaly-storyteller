@@ -106,14 +106,16 @@ function submitData() {
   })
     .then(res => res.json())
     .then(res => {
-
+      
       const fullData = res.data;
-
       console.log("GENERATED:", fullData);
-
+    
+      // save globally
+      currentData = fullData;
+    
       // STEP 2: send to n8n
       sendToN8N(fullData);
-
+    
     })
     .catch(err => {
       console.error("MANUAL ERROR:", err);
