@@ -130,23 +130,6 @@ Supports automated workflows using:
 
 ---
 
-## 📂 Project Structure
-
-```bash
-anomaly-storyteller/
-│
-├── auto.html
-├── manual.html
-├── options.html
-├── assets/
-├── css/
-├── js/
-├── webhook/
-└── README.md
-```
-
----
-
 ## 👨‍💻 Author
 
 Developed as an AI-powered monitoring and storytelling platform for ads performance analytics.
